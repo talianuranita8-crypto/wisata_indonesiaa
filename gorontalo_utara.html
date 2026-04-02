@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Gorontalo Utara</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#1a0000;
+    color:white;
+    padding-top:80px;
+}
+
+/* NAVBAR MODERN */
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right, #8b0000, #ff0000);
+    box-shadow:0 4px 15px rgba(0,0,0,0.5);
+    z-index:1000;
+}
+
+nav .menu{
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    color:yellow;
+    text-decoration:none;
+    font-weight:600;
+    font-size:18px;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+    transform:scale(1.15);
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:100vh;
+}
+
+.hero iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top, #1a0000, transparent);
+}
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:yellow;
+}
+
+/* SECTION */
+section{
+    padding:80px 40px;
+    text-align:center;
+}
+
+/* CARD */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:300px;
+    background:#330000;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+    color:yellow;
+}
+
+.card p{
+    padding:0 10px 20px;
+    font-size:14px;
+}
+
+/* FORM */
+form{
+    max-width:500px;
+    margin:auto;
+    background:#330000;
+    padding:20px;
+    border-radius:10px;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:yellow;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* ANIMASI */
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#660000;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR BARU -->
+<nav>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#wisata">Destinasi</a>
+        <a href="#aktivitas">Aktivitas</a>
+        <a href="#kuliner">Kuliner</a>
+        <a href="#booking">Booking</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<iframe src="https://www.youtube.com/embed/Y0ZDIyRWxq0?autoplay=1&mute=1&controls=0&loop=1&playlist=Y0ZDIyRWxq0"></iframe>
+<div class="overlay"></div>
+
+<div class="hero-text">
+<h1>Explore Gorontalo Utara</h1>
+<p>Keindahan alam, budaya, dan kuliner</p>
+</div>
+</div>
+
+<!-- WISATA -->
+<section id="wisata" class="fade">
+<h2>Destinasi Wisata</h2>
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<h3>Pulau Saronde</h3>
+<p>Pantai pasir putih & air jernih.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<h3>Pulau Mohinggito</h3>
+<p>Spot snorkeling terbaik.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+<h3>Pulau Bugisa</h3>
+<p>Pemandangan laut indah.</p>
+</div>
+
+</div>
+</section>
+
+<!-- AKTIVITAS -->
+<section id="aktivitas" class="fade">
+<h2>Aktivitas Wisata</h2>
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800">
+<h3>Snorkeling</h3>
+<p>Menikmati bawah laut Gorontalo.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<h3>Island Hopping</h3>
+<p>Jelajah pulau-pulau eksotis.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<h3>Sunset Pantai</h3>
+<p>Menikmati matahari terbenam.</p>
+</div>
+
+</div>
+</section>
+
+<!-- KULINER -->
+<section id="kuliner" class="fade">
+<h2>Kuliner Khas</h2>
+<div class="container">
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3NoLRgsbthnnnvOO0MoNQphez3svg25iPfer725QpFqiU-ThgrfW6Uit9&s=10">
+<h3>Binte Biluhuta</h3>
+<p>Sup jagung khas Gorontalo.</p>
+</div>
+
+<div class="card">
+<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWBAuh_qhqdhqFBuNehmJEE5dkqCEmdV6VxQkuanLG-qBCfSEAXEi_i3xo&s=10">
+<h3>Ikan Bakar Rica</h3>
+<p>Ikan bakar pedas khas.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+<h3>Ilabulo</h3>
+<p>Makanan tradisional sagu.</p>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="fade">
+<h2>Booking Wisata</h2>
+
+<form>
+<input type="text" placeholder="Nama Lengkap" required>
+<input type="email" placeholder="Email" required>
+
+<select>
+<option>Pilih Paket Wisata</option>
+<option>Paket Pulau Saronde</option>
+<option>Paket Snorkeling</option>
+<option>Paket Island Hopping</option>
+</select>
+
+<input type="number" placeholder="Jumlah Orang">
+
+<button type="submit">Pesan Sekarang</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Explore Gorontalo Utara</p>
+</footer>
+
+<script>
+const fades = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    fades.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
